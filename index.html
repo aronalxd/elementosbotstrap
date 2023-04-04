@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Elementos de Interés en Bootstrap</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <!-- Primera sección -->
+  <section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Bootstrap Jumbotron</h1>
+      <p class="lead">Este es un ejemplo de Jumbotron que puedes utilizar en tus proyectos de Bootstrap.</p>
+      <p>
+        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Llamada a la acción</button>
+      </p>
+    </div>
+  </section>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Título del modal</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <p>Este es el contenido del modal. Puedes agregar lo que quieras aquí.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Segunda sección -->
+  <section class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <form>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre">
+          </div>
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="number" class="form-control" id="telefono" name="telefono">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- Tercera sección -->
+  <section class="container">
+    <div class="card">
+      <div class="card-header">
+        Mi perfil de desarrollador/a
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tu nombre</h5>
+        <p class="card-text">Breve descripción de ti como desarrollador/a.</p>
+    </div>
+    <div class="card-footer">
+    <a href="mailto:tuemail@example.com">tuemail@example.com</a>
+    </div>
+    </div>
+    </section>
+    </body>
+    </html>
